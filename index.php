@@ -2,11 +2,11 @@
 
 require_once("config.php");
 
-$joao = new Usuario();
+$root = new Usuario();
 
-$joao->loadbyId(2);
+$root->loadbyId(3);
 
-echo $joao;
+echo $root;
 
 //$sql = new Sql();
 

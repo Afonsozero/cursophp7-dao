@@ -3,7 +3,7 @@
 class Usuario {
 
 	private $idusuario;
-	private $iddeslogin;
+	private $deslogin;
 	private $dessenha;
 	private $dtcadastro;
 
@@ -15,12 +15,12 @@ class Usuario {
 		$this->idusuario = $value;
 	}
 
-		public function getIddeslogin(){
-		return $this->iddeslogin;
+		public function getDeslogin(){
+		return $this->deslogin;
 	}
 
-	public function setIddeslogin(){
-		$this->iddeslogin = $value;
+	public function setDeslogin(){
+		$this->deslogin = $value;
 	}
 
 		public function getDessenha(){
@@ -51,7 +51,7 @@ class Usuario {
 
 		$this->setIdusuario($row['idusuario']);
 		$this->setDeslogin($row['deslogin']);
-		$this->setDesenha($row['dessenha']);
+		$this->setDessenha($row['dessenha']);
 		$this->setDtcadastro(new DateTime($row['dtcadastro']));
     }
 
