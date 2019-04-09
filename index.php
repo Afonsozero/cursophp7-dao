@@ -2,10 +2,16 @@
 
 require_once("config.php");
 
-$sql = new Sql();
+$joao = new Usuario();
 
-$usuarios = $sql->select("SELECT * FROm tb_usuarios");
+$joao->loadbyId(2);
 
-echo json_encode($usuarios);
+echo $joao;
+
+//$sql = new Sql();
+
+//$usuarios = $sql->select("SELECT * FROm tb_usuarios");
+
+//echo json_encode($usuarios);
 
 ?>
